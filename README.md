@@ -14,6 +14,7 @@ experimental MCP client. This recipe shows the JSON snippet to drop in.
 
 - Bolt.diy running locally or self-hosted (see [stackblitz-labs/bolt.diy](https://github.com/stackblitz-labs/bolt.diy))
 - An Engram API key from <https://lumetra.io> (format: `eng_live_...`)
+- A BYOK provider key configured at [lumetra.io/models](https://lumetra.io/models). Without one, `store_memory` and `query_memory` return HTTP 412 BYOK_REQUIRED. Engram runs inference against your own LLM provider key, never a vendor-owned key.
 
 ## Setup
 
